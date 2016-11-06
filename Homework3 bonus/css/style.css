@@ -1,0 +1,82 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	width: 100%;
+	background: black url(../img/bg.png) center center no-repeat ;
+	background-size: cover;
+	position: fixed;
+}	
+
+
+#wrapper {
+	background-image: url(../img/bg.png);
+	font-family: Arial, "Times New Roman", sans-serif, serif;
+	height: 883px;
+	margin: 0 auto;
+	width: 960px;
+}
+
+.clear {
+	clear: both;
+}
+
+/*HEADER*/
+#logo {
+	float: left;
+}
+
+#logo img {
+	margin: 40px 0 0 70px;
+}
+
+#contact {
+	padding: 127px 70px 0 750px;
+}
+
+#contact h3 {
+	color: #fff;
+	
+}
+
+#contact p {
+	color: #fff;
+	font-size: 90%;
+}
+
+#contact a {
+	color: #fff;
+	font-size: 80%;
+	text-decoration: none;
+}
+	
+/*CONTENT*/
+
+#content {
+	margin: 0 70px 100px 70px;
+}
+
+.content {
+	float: left;
+	margin: -10px 3px 35px 0;
+}	
+
+#content h3 {
+	text-align: center;
+}
+
+#content a {
+	color: #fff;
+	font-size: 90%;
+	text-decoration: none;
+}
+
+/*FOOTER*/
+
+footer p {
+	color: #fff;
+	font-size: 75%;
+	margin: 145px 0 0 395px;
+}
