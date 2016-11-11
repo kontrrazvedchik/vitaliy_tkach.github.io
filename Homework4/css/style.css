@@ -13,7 +13,7 @@ body {
 	box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.5);
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	height: 988px;
-	margin: 39px auto 15px;
+	margin: 0 auto 15px;
 	width: 1000px;
 }
 
@@ -73,8 +73,8 @@ header #logo img {
 /*PHOTO*/
 
 #photo img {
-	margin-top: -3px;	
-	margin-bottom: -3px;
+	margin-top: -2px;	
+	margin-bottom: -4px;
 }
 
 /*NAVIGATION*/
@@ -82,6 +82,7 @@ header #logo img {
 #nav {
 	background: linear-gradient(to top, #373737 0%, #303030 100%);
 	border-bottom: 1px solid #000;
+	border-top: 1px solid #cacbcb;
 	box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.8);
 	float: left;
 	font-size: 90%;
@@ -101,8 +102,11 @@ header #logo img {
 #nav li {
 	display: block;
 	float: left;
-	padding: 0 27px;
 	position: relative;
+}
+
+#nav  > li {
+	margin-left: 36px;
 }
 
 #nav li a {
@@ -111,7 +115,7 @@ header #logo img {
 	display: block;
 	padding: 5px 5px 4px 5px;
 	text-decoration: none;
-	
+	padding: 5px 15px 4px 10px;
 }
 
 #nav li a:hover {
@@ -139,6 +143,8 @@ header #logo img {
 }
 
 #nav li:hover ul { /* Выводим выпадающий пункт при наведении курсора */
+	border-top: 1px solid #000;
+	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.8);
 	left: 0; /* Приносим его обратно на экран, когда нужно */
 	opacity: 1; /* Делаем непрозрачным */
 }
@@ -154,8 +160,6 @@ header #logo img {
 
 #nav li:hover ul li a:hover {
 	background: #303030;
-    -moz-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
 }
 
 /*CONTENT*/
