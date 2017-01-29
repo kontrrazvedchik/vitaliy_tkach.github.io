@@ -5,19 +5,14 @@
 
 body {
 	background: #282828;
-	position: relative;
 	width: 100%;
 }
 
 table {
 	background: #fff;
-	border: none;
-	margin-left: -200px;
-	margin-top: 200px;
-	position: absolute;
-	top: 50%;
-	left: 50%;	
-	width: 496px;
+	border-spacing: 0;
+	margin: 40px auto;
+	border: none;	
 }
 
 td {
@@ -50,6 +45,7 @@ td {
 }
 
 .t_2_3 {
+	background-color: #fde954;
 	border-right: none;
 }
 
