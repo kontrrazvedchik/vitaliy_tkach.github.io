@@ -1,0 +1,28 @@
+body {
+	font-size: 16px;
+	font-family: Arial, sans-serif;
+}
+
+.homework {
+	max-width: 90%;
+	min-width: 310px;
+	width: 440px;
+	padding: 10px;
+	margin: 20px auto;
+	border: 1px solid gray;
+	-webkit-box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.75);
+	box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.75);
+}
+
+button {
+	display: block;
+	margin: 10px auto;
+}
+
+.text__p {
+	font-size: 10px;
+}
+
+
+
