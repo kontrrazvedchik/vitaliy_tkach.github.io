@@ -7,18 +7,28 @@ html {
 	overflow-y: hidden;
 }
 
+@font-face {
+    font-family: 'helveticaneuecyrblack';
+    src: url('helveticaneuecyr-black-webfont.eot');
+    src: url('helveticaneuecyr-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('helveticaneuecyr-black-webfont.woff2') format('woff2'),
+         url('helveticaneuecyr-black-webfont.woff') format('woff'),
+         url('helveticaneuecyr-black-webfont.ttf') format('truetype'),
+         url('helveticaneuecyr-black-webfont.svg#helveticaneuecyrblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 h1, a , input , p , label, .ou {
 	font-family: Helvetica Neue;
 }
 
 body {
-	width: 100%;
-}
-
-#wrapper {
-	font-family: Tahoma, sans-serif;
-	margin: auto;
-	position: relative;
+	background: url(../img/bg.jpg) no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
 	width: 100%;
 }
 
