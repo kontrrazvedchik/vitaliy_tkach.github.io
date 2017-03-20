@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Homework 9-10</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
+	<link rel="stylesheet" href="css/selectric.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+	<h1 class="title">Formula 1</h1>
+	<button class="animate">animate off</button>
+</header>
+<div class="jcarousel-wrapper">
+	<div class="jcarousel">
+		<ul>
+			<li>
+				<img src="img/photo1.jpg" alt="photo1">
+			</li>
+			<li>
+				<img src="img/photo2.jpg" alt="photo2">
+			</li>
+			<li>
+				<img src="img/photo3.jpg" alt="photo3">
+			</li>
+			<li>
+				<img src="img/photo4.jpg" alt="photo4">
+			</li>
+			<li>
+				<img src="img/photo5.jpg" alt="photo5">
+			</li>
+			<li>
+				<img src="img/photo6.jpg" alt="photo6">
+			</li>
+			<li>
+				<img src="img/photo7.jpg" alt="photo7">
+			</li>
+			<li>
+				<img src="img/photo8.jpg" alt="photo8">
+			</li>
+		</ul>
+	</div>
+	<div class="photo-controls">
+		<a href="#" class="jcarousel-control-prev inactive">
+			<svg height="200" width="100">
+				<polyline class="arrow arrow_left" points="100,0 0,100 100,200" style="stroke-width:2" />
+				Sorry, your browser does not support inline SVG.
+			</svg>
+		</a>
+		<a href="#" class="jcarousel-control-next">
+			<svg height="200" width="100">
+				<polyline class="arrow arrow_right" points="0,0 100,100 0,200" style="stroke-width:2" />
+				Sorry, your browser does not support inline SVG.
+			</svg>
+		</a>
+	</div>
+	<div class="jcarousel-pagination">
+		<a href="#1"></a>
+		<a href="#2"></a>
+		<a href="#3"></a>
+		<a href="#4"></a>
+		<a href="#5"></a>
+		<a href="#6"></a>
+		<a href="#7"></a>
+		<a href="#8"></a>
+	</div>
+</div>
+<div class="control-wrapper">
+	<h3 class="small-title">Select photo to view again:</h3>
+	<div class="select-container">
+	<select>
+		<option value="">Choose photo...</option>
+		<option value="1">Ferrari</option>
+		<option value="2">Mclaren</option>
+		<option value="3">BMW-Sauber</option>
+		<option value="4">Williams</option>
+		<option value="5">Red Bull</option>
+		<option value="6">Toyota</option>
+		<option value="7">Bar-Honda</option>
+		<option value="8">Renault</option>
+	</select>
+	</div>
+	<form action="#" class="clearfix">
+		<div class="checkbox-container">
+			<h3 class="small-title">Choose the best photo:</h3>
+			<label for="myLabel1"><input type="checkbox" class="myCheckbox" name="label1" id="myLabel1"> Ferrari</label>
+			<label for="myLabel2"><input type="checkbox" class="myCheckbox" name="label2" id="myLabel2"> Mclaren</label>
+			<label for="myLabel3"><input type="checkbox" class="myCheckbox" name="label3" id="myLabel3"> BMW-Sauber</label>
+			<label for="myLabel4"><input type="checkbox" class="myCheckbox" name="label4" id="myLabel4"> Williams</label>
+			<label for="myLabel5"><input type="checkbox" class="myCheckbox" name="label5" id="myLabel5"> Red Bull</label>
+			<label for="myLabel6"><input type="checkbox" class="myCheckbox" name="label6" id="myLabel6"> Toyota</label>
+			<label for="myLabel7"><input type="checkbox" class="myCheckbox" name="label7" id="myLabel7"> Bar-Honda</label>
+			<label for="myLabel8"><input type="checkbox" class="myCheckbox" name="label8" id="myLabel8"> Renault</label>
+		</div>
+		<div class="customCheckbox-container">
+		<h3 class="small-title">Choose the worst photo:</h3>
+			<input type="checkbox" class="myCustomCheckbox" name="customLabel1" id="myCustomLabel1">
+			<label for="myCustomLabel1">Ferrari</label>
+			<input type="checkbox" class="myCustomCheckbox" name="customLabel2" id="myCustomLabel2">
+			<label for="myCustomLabel2">Mclaren</label>
+			<input type="checkbox" class="myCustomCheckbox" name="customLabel3" id="myCustomLabel3">
+			<label for="myCustomLabel3">BMW-Sauber</label>
+			<input type="checkbox" class="myCustomCheckbox" name="customLabel4" id="myCustomLabel4">
+			<label for="myCustomLabel4">Williams</label>
+			<input type="checkbox" class="myCustomCheckbox" name="customLabel5" id="myCustomLabel5">
+			<label for="myCustomLabel5">Red Bull</label>
+			<input type="checkbox" class="myCustomCheckbox" name="customLabel6" id="myCustomLabel6">
+			<label for="myCustomLabel6">Toyota</label>
+			<input type="checkbox" class="myCustomCheckbox" name="customLabel7" id="myCustomLabel7">
+			<label for="myCustomLabel7">Bar-Honda</label>
+			<input type="checkbox" class="myCustomCheckbox" name="customLabel8" id="myCustomLabel8">
+			<label for="myCustomLabel8">Renault</label>
+		</div>
+		<input type="submit" class="submitButton" value="Send">
+	</form>
+</div>
+<footer class="footer">
+	<p>
+		2017 &copy; Copyreight.
+	</p>
+</footer>
+	<script src="js/jquery.jcarousel.js"></script>
+	<script src="js/jquery.selectric.js"></script>
+	<script src='js/jquery.formstyler.min.js'></script> 
+	<script src="js/script.js"></script>
+</body>
+</html>
