@@ -2,6 +2,101 @@ body {
 	background: url(../img/f1-car.jpg);
 }
 
+
+.jcarousel li {
+	/* Required only for block elements like <li>'s */
+	float: left;
+	line-height: 0;
+}
+
+	/* nav menu */
+
+nav {
+	margin: 10px auto;
+	background-color: #222;
+	border: 1px solid #ddd;
+	padding:10px 0;
+	position: relative;
+	z-index: 999;
+	width: 888px; 
+}
+nav ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+nav ul li {
+    display:inline-block;
+    position:relative;
+}
+
+/* sub navigation */
+nav li ul {    
+    background-color: #222;
+    position:absolute;
+    left:0;
+    top:40px; /* make this equal to the line-height of the links (specified below) */
+    width:200px;
+}
+nav li li {
+    position:relative;
+    margin:0;
+    display:block;
+}
+nav li li ul {
+    position:absolute;
+    top:0;
+    left:200px; /* make this equal to the width of the sub nav above */
+    margin:0;
+}
+
+/* style all links */
+nav a {
+    line-height:40px;
+    padding:0 12px;
+    margin:0 12px;
+}
+nav a {
+    color:#fff;
+    text-decoration:none;
+    display:block;
+}
+nav a:hover,
+nav a:focus,
+nav a:active {
+    color: #f11;
+}
+
+/* style sub level links */
+nav li li a {
+    border-bottom:solid 1px #f00;
+    margin:0 10px;
+    padding:0;
+}
+nav li li:last-child a {
+    border-bottom:none;
+}
+
+/* hide sub menu links */
+ul.sub-menu {
+    display:none;
+}
+
+/* show arrows for dropdowns */
+nav li.dropdown > a {
+    background-image:url('../img/arrow-down.png');
+    background-position:right 20px;
+    background-repeat:no-repeat;
+}
+
+nav li li.dropdown > a {
+    background-image:url('../img/arrow-right.png');
+    background-position:right 16px;
+    background-repeat:no-repeat;
+}
+
+
+
 .clearfix:after {
 	content: ".";
 	display: block;
@@ -179,7 +274,7 @@ body {
 .control-wrapper {
 	width: 812px;
 	padding: 40px 40px;
-	margin: 100px auto;
+	margin: 50px auto;
 	border: 1px solid #ddd;
 	background-color: #222;
 	-webkit-box-shadow: inset 0px -23px 21px 0px rgba(0,0,0,0.5);
@@ -266,8 +361,6 @@ input.myCustomCheckbox:checked + label:before {
 }
 
 .footer {
-	line-height: 70px;
-	background-color: #000;
 	color: #bbb;
 }
 

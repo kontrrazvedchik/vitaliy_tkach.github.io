@@ -1,4 +1,5 @@
 $(function(){
+
 var $animateflag = false;
 
 	$('.jcarousel').jcarousel({
@@ -61,4 +62,18 @@ var $animateflag = false;
 	});
 
 	$('.myCheckbox').styler();
+	
+	
+	// dropdown menu
+
+  $('.dropdown').hover(mouseIn, mouseOut);
+
+  function mouseIn(){
+    $(this).children('.sub-menu').slideDown(200);
+  };
+  
+  function mouseOut(){
+    $(this).children('.sub-menu').slideUp(200);
+  };
+
 });
