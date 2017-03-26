@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework 11-12</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.min.js"></script>
+  <script src="js/jrtmpl.js"></script>
+  <script src="js/jquery.carousel.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper cf">
+  <div class="carousel-arrow-left"></div>
+  <div class="carousel-hider" id="carouselhider">
+    <!-- emmet macro ul.carousel-list>li.carousel-item*15>(a[href=#item$$$]>img[src="img/image000.png"])+p{name$$$} -->
+
+  </div>
+  <div class="carousel-arrow-right"></div>
+</div>
+
+<div class="forms-wrapper">
+  <div id="userform1" class="form">
+  </div>
+  <div id="userform2" class="form">
+  </div>
+</div>
+
+<div id="modal" style="display:none;">
+  MODAL FORM is here <a id=close-btn href="#">X</a>
+</div>
+
+<script type="text/tmpl" id="carouseltmpl">
+    <ul class="carousel-list">
+      <% for (var i = 0; i < items.length; i++) {%>
+      <li class="carousel-item">
+        <a href="<%= items[i].url %>">
+          <img src="<%= items[i].img %>" alt="">
+          <p><%= items[i].name %></p>
+        </a>
+        
+      </li>
+      <% } %>
+    </ul> 
+</script>
+
+<script type="text/tmpl" id="usertmpl">
+    
+    <div class="head"> 
+      <p class="version">#usertmpl parsed by <%= version %></p>
+      <h2 class="name"><%= name %></h2>
+      <img class="foto" src="<%= foto %>" alt="<%= name %>" title="<%= name %>">
+    </div>
+    
+    <p class="underline"><%= title %></p>
+    
+    <p>Record:</p>
+    <ul class="underline">
+      <% for ( var i = 0; i < record.length; i++ ) { %>
+        <li><%= record[i] %></li>
+      <% } %>  
+    </ul>
+
+    <div class="contacts underline">
+      
+      <% if(contacts.fb) { %>
+        <p>Facebook:<br>
+			<a class="fb" href="<%= contacts.fb %>" target="_blank"><%= contacts.fb %></a><br>
+        </p>
+      <% }%>      
+    </div>    
+  </div>
+
+</script>
+
+</body>
+</html>

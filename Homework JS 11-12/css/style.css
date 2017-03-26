@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(50, 94, 255, 0.3);
+}
+
+h2 {
+    color: black;
+}
+
+.cf:after {
+    display: table;
+    clear: both;
+    content: '';
+}
+
+.carousel-wrapper {
+    width: 1100px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.carousel-hider {
+    float: left;
+    overflow: hidden;
+    width: 660px;
+}
+
+.carousel-arrow-left,
+.carousel-arrow-right {
+    display: block;
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    cursor: pointer;
+    transition: all .2s ease-in;
+    background-image: url('../img/arrows.png');
+    background-size: cover;
+}
+
+.carousel-arrow-left:hover,
+.carousel-arrow-right:hover {
+    transform: scale(1.05);
+}
+
+.carousel-arrow-left {
+    background-position: 0 0;
+}
+.carousel-arrow-right {
+    background-position: -200px 0;
+}
+
+.carousel-list {
+    position: relative;
+
+    width: 20000px;
+
+    list-style: none;
+}
+
+.carousel-item {
+    display: block;
+    float: left;
+    /* margin-right: 25px;*/
+}
+
+.carousel-item a {
+    text-decoration: none;
+    outline: 0;
+    color: black;
+}
+
+.carousel-item img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+.carousel-item p {
+    font: normal bold 18px/20px Arial, sans-serif;
+    margin-bottom: 5px;
+    text-align: center;
+    width: 200px;
+    overflow: hidden;
+}
+
+/* forms */
+
+.forms-wrapper {
+    width: auto;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.form {
+    background-color: rgb(255, 255, 255);
+	font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 500px;
+    display: inline-block;
+    margin: 20px 5px;
+    padding: 20px 10px;
+    text-align: left;
+    border: 2px solid rgb(128,128,128);
+}
+
+.form .head {
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.form .version {
+    padding: 15px;
+
+    background: rgba(255,128,128,.8);
+}
+
+.form .fio {
+    padding: 10px 0;
+
+    text-align: center;
+}
+
+.form .foto {
+    max-width: 150px;
+    max-height: 150px;
+    margin: 15px 5px;
+}
+
+.form p {
+    padding: 10px 0 5px;
+}
+
+.form .underline {
+    border-bottom: 2px solid rgb(128,128,128);
+}
+
+.form ul {
+    padding-bottom: 5px;
+    padding-left: 3em;
+
+    list-style: square outside;
+}
+
+.form ul > li {
+    line-height: 28px;
+}
