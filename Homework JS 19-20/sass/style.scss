@@ -1,0 +1,14 @@
+@import 'base/reset',
+		  'base/base';
+
+@import 'vendors/jquery-ui.min';
+
+@import 'partial/header',
+		  'partial/advantages',
+		  'partial/services',
+		  'partial/news',
+		  'partial/brands',
+		  'partial/footer';
+
+@import 'componets/slider',
+'componets/accordion';
