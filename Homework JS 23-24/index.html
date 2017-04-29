@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		 <meta charset="UTF-8">
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		 <title>Homework JS 23-24</title>
+		 <!-- data-main attribute tells require.js to load
+		 scripts/main.js after require.js loads. -->
+		 <script data-main="js/todo" src="js/require.js"></script>
+		 <link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<script type="text/template" id="wrapper-template">
+			<div class="wrapper">
+				<div class="controls">
+					<input type="text" class="item-value" placeholder="What should we do?">
+					<button class="item-add">Add</button>
+				</div>
+				<ul class="item-list"></ul>
+			</div>
+		</script>  
+
+		<script type="text/template" id="list-template">
+			<% for(var i = 0; i < data.length; i++){ %>
+				<li class="item"><span class="item__text item__text--show"><%= data[i] %></span><input class="item__input item__input--hidden" type="text" value="<%= data[i] %>"><div data-value="<%= data[i] %>" class="item__delete">x</div></li>
+			<% }; %>
+		</script>  
+
+
+	</body>
+</html>

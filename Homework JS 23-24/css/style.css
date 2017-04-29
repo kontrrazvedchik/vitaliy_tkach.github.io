@@ -1,0 +1,132 @@
+body {
+  background: #ddd;
+}
+
+.wrapper {
+  max-width: 768px;
+  margin: 0 auto;
+  color: black;
+  background: #f0f0f0;
+  font-size: 16px;
+  box-shadow: 0 0 10px -5px rgba(0,0,0,1);
+  padding: 0.2em;
+}
+
+/* THE LIST */
+
+.item-list {
+  list-style: none;
+  padding: 0;
+  border: none;
+}
+
+.item {
+  /*clear: both;*/
+  position: relative;  
+  margin: 0px 0;
+  background-color: transparent;
+  padding: 0.5em;
+  padding-right: 4em;
+  border: none;  
+  /*border-top: 1px solid rgba(196,196,196,1);*/
+  border-top: 1px solid rgba(128,128,128,1);
+}
+
+.item__text {
+  font: normal 1.25em/180% Calibri, Arial, sans-serif;
+}
+
+.item__text--hidden {
+  display: none;
+}
+
+.item:last-child {
+  border-bottom: 1px solid rgba(128,128,128,1);
+}
+
+.item:hover {
+  font-weight: bold;
+  background-color: rgba(255,255,255,1);
+  /*border-top-color: rgba(128,128,128,1);*/
+  border-bottom-color: 1px solid rgba(0,0,0,1);
+  box-shadow: 0 0 5px 3px rgba(0,0,0,0.3);
+}
+
+.item__delete {  
+  /*float: right;*/
+  /*margin-right: 1em;*/
+  position: absolute;
+  top: 0.3em;
+  right: 0.5em;
+  font: normal 1.25em/180% Calibri, Arial, sans-serif;
+  padding: 0 0.6em;
+  border: 1px solid black;
+  border-radius: 50%;
+  font-weight: bolder;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.item:hover .item__delete {
+  visibility: visible; 
+}
+
+.item__delete:hover {
+  background-color: red;
+}
+
+.item__input--hidden {  
+  display: none;  
+}
+
+.item__input--show {
+  display: block;
+  font: italic 1.25em/180% Calibri, Arial, sans-serif;
+  border: none;
+  outline: none;
+  width: 100%;
+  background: transparent;
+
+}
+
+/* THE CONTROLS */
+
+.controls {
+
+}
+
+.item-value { 
+  display: inline-block; 
+  font: normal 1.25em/180% Calibri, Arial, sans-serif;
+  margin: 0.3em;  
+  padding: 0.2em 0.5em;
+  padding-right: 5em;
+  outline: none;
+  border: none;
+  width: 60%;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  background: transparent;
+}
+
+.item-value:focus {
+  font-weight: bold;
+  box-shadow: inset 50% 0px 5px -2px rgba(0,0,0,0.5);
+}
+
+.item-add {
+  display: inline-block; 
+  top: 0.5em;
+  right: 0.2em;
+  font: bold 1.25em/180% Calibri, Arial, sans-serif;
+  height: 2em;
+  border: 2px solid black;
+  border-radius: 0.8em;
+  box-shadow: 0 0px 5px -2px rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+
+.item-add:hover {
+  background: rgba(0,255,0,0.5);
+  box-shadow: inset 0 5px 15px 2px rgba(0,255,0,0.5);
+}
